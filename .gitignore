@@ -7,3 +7,9 @@ wandb/
 **/__pycache__/
 
 ckpt
+
+llm-compressor/qmodel/
+
+llm-compressor/sparse_logs/
+
+src/open_r1.egg-info

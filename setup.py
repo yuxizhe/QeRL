@@ -41,22 +41,23 @@ if stale_egg_info.exists():
 # IMPORTANT: all dependencies should be listed here with their version requirements, if any.
 #   * If a dependency is fast-moving (e.g. trl), pin to the exact version
 _deps = [
-    "accelerate==1.4.0",
-    "bitsandbytes>=0.43.0",
-    "datasets>=3.2.0",
-    "deepspeed==0.16.8",
-    "distilabel[vllm,ray,openai]>=1.5.2",
+    "accelerate>=1.10.0",
+    "bitsandbytes>=0.48.2",
+    "datasets>=4.4.1",
+    "deepspeed==0.18.1",
+    "distilabel[ray,openai]>=1.5.2",
     "e2b-code-interpreter>=1.0.5",
     "einops>=0.8.0",
+    "flash-attn>=2.8.3",
     "flake8>=6.0.0",
     "hf_transfer>=0.1.4",
-    "huggingface-hub[cli,hf_xet]>=0.30.2,<1.0",
+    "huggingface-hub[cli,hf_xet]>=0.35.0,<1.0",
     "isort>=5.12.0",
     "jieba",  # Needed for Chinese language support
     "langdetect",  # Needed for LightEval's extended tasks
     "latex2sympy2_extended>=1.0.6",
     "liger-kernel>=0.5.10",
-    "lighteval @ git+https://github.com/huggingface/lighteval.git@d3da6b9bbf38104c8b5e1acc86f83541f9a502d1",  # Critical bug fix for tokenizer revisions: https://github.com/huggingface/lighteval/pull/721
+    "lighteval @ git+https://gh-proxy.com/https://github.com/huggingface/lighteval.git@d3da6b9bbf38104c8b5e1acc86f83541f9a502d1",  # Critical bug fix for tokenizer revisions: https://github.com/huggingface/lighteval/pull/721
     "math-verify==0.5.2",  # Used for math verification in grpo
     "morphcloud==0.1.67",
     "packaging>=23.0",
@@ -67,9 +68,9 @@ _deps = [
     "ruff>=0.9.0",
     "safetensors>=0.3.3",
     "sentencepiece>=0.1.99",
-    "torch==2.6.0",
-    "transformers==4.52.3",
-    "trl[vllm]==0.18.0",
+    "torch>=2.9.0a0",
+    "transformers>=4.55.2",
+    "trl>=0.21.0",
     "wandb>=0.19.1",
     "async-lru>=2.0.5",
     "aiofiles>=24.1.0",
